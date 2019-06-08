@@ -1,6 +1,6 @@
 import configparser
 import os
-import helper
+import helper as hlp
 from datetime import datetime
 
 
@@ -27,6 +27,6 @@ data_backup_directory = os.path.join(data_directory, "bak")
 log_file = os.path.join(log_directory, "log_" + datetime.now().strftime('%Y-%m') + ".txt")
 
 # create directories if needed
-helper.create_dir_if_not_exists(data_directory)
-helper.create_dir_if_not_exists(log_directory)
-helper.create_dir_if_not_exists(data_backup_directory)
+hlp.create_dir_if_not_exists(data_directory)
+hlp.create_dir_if_not_exists(log_directory)
+hlp.create_dir_if_not_exists(data_backup_directory)
